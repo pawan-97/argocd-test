@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: age-calci
+  name: age-calci
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: age-calci
+  template:
+    metadata:
+      labels:
+        app: age-calci
+    spec:
+      containers:
+      - image: pawanksry97/age-cal-fastapi:v0.1
+        name: age-cal-fastapi
+        ports:
+        - containerPort: 80
