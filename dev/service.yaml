@@ -3,7 +3,8 @@ kind: Service
   name: age-calci-svc
 spec:
   selector:
-    app: age-calci
+    matchLabels:
+      app: age-calci
   ports: 
   - port: 8000
     protocol: TCP
