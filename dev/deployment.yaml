@@ -18,4 +18,4 @@ spec:
       - image: pawanksry97/age-cal-fastapi:v0.1
         name: age-cal-fastapi
         ports:
-        - containerPort: 80
+        - containerPort: 8080
