@@ -4,7 +4,6 @@ metadata:
   name: age-calci-svc
 spec:
   selector:
-    matchLabels:
       app: age-calci
   ports: 
   - port: 8000
